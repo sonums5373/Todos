@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    background: #000000;
+}
+
+
+label{
+    font-size: 35px;
+    color: rgb(12, 106, 189);
+    
+}
