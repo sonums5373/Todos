@@ -6,7 +6,7 @@ function Todos() {
     console.log(result);
     return (
         <>
-            <h1 className="text-center text-primary m-10">All Todos List</h1>
+            <h1 className="text-center text-primary m-10"> Todos List</h1>
            <div className='container'>
                 <table className="table shadow mt-5">
                     <thead>
@@ -19,12 +19,12 @@ function Todos() {
                     </thead>
                     <tbody>
                       {
-                        result?.length>0?result.map((Todos,index)=>(
+                        result?.length>0?result.map((todos,index)=>(
                           <tr key={index}>
-                          <td>{Todos.UserId}</td>
-                          <td>{Todos.id}</td>
-                          <td>{Todos.title}</td>
-                          <td>{Todos.complete?"yes":"no"}</td>
+                          <td>{todos.userId}</td>
+                          <td>{todos.id}</td>
+                          <td>{todos.title}</td>
+                          <td>{todos.completed?"yes":"no"}</td>
 
                           </tr>
                         )): <tr className='text-danger fs-4 fw-bolder'>nothing to display</tr>
